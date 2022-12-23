@@ -1,0 +1,12 @@
+.contact {
+  .contact-content {
+    padding: 50px 0;
+    text-align: center;
+    .form-group {
+      padding: 5px;
+    }
+    .contact-btn {
+      @include cBtn(65px, 320px, 50px);
+    }
+  }
+}

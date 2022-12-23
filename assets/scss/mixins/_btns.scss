@@ -1,0 +1,23 @@
+@mixin cBtn($border-radius, $width, $height: 50px) {
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  border: 1px solid $primary-color;
+  color: #fff;
+  text-transform: uppercase;
+  width: $width;
+  height: $height;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: $primary-color;
+    background-color: #fff;
+  }
+  &:disabled {
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    color: #fff;
+    cursor: not-allowed;
+    &:hover {
+        box-shadow: none;
+    }
+  }
+}

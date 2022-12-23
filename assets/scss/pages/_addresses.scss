@@ -1,0 +1,97 @@
+.addresses-content {
+  .user-address-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #C8C8C840;
+    padding: 15px;
+    .box-header {
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid #EDF0F7;
+      .title {
+        color: $primary-color;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+    .box-content {
+      .no-address {
+        text-align: center;
+        padding: 10px 0;
+        .title {
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+      .list-style {
+        .list {
+          padding: 15px 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          .left-list {
+            .title {
+              color: #333333;
+              font-weight: bold;
+              text-transform: uppercase;
+              margin-bottom: 5px;
+            }
+            .desc {
+              color: #333333;
+              font-weight: 600;
+              text-transform: capitalize;
+              svg {
+                width: 20px;
+                margin-right: 5px;
+                fill: $primary-color;
+              }
+            }
+          }
+          .right-list {
+            button {
+              margin: 0 5px;
+              border-radius: 50%;
+              border: none;
+              width: 40px;
+              height: 40px;
+              &:last-child {
+                margin: 0;
+              }
+            }
+            .editAddress {
+              background-color: #A0AEC0;
+            }
+            .deleteAddress {
+              background-color: #C33434;
+            }
+          }
+        }
+      }
+    }
+  }
+  .add-address-box {
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #C8C8C840;
+    padding: 15px;
+    .box-header {
+    margin-bottom: 20px;
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid #EDF0F7;
+      .title {
+        color: $primary-color;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+    .form-group {
+      .vs__dropdown-toggle {
+        border: 1px solid #EDF0F7;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+    .new-address-btn {
+      @include cBtn(65px, 100%, 50px);
+    }
+  }
+}

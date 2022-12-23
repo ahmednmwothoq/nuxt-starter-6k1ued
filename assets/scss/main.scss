@@ -1,0 +1,42 @@
+/* Settings contain font, colors definitions, etc. */
+@import "./shared/colors";
+@import "./shared/settings";
+
+/* Functions */
+
+/* Mixins */
+@import "./mixins/btns";
+@import "./mixins/inputs";
+@import "./mixins/alert";
+
+/* Components specific UI components "header, footer, etc." */
+@import "./shared/TheNav";
+@import "./shared/TheFooter";
+@import "./components/TheCard";
+@import "./components/TheAlert";
+@import "./components/profileSideBar";
+@import "./components/uploadImg";
+@import "./components/TheLoader";
+@import "./shared/multiUse";
+
+/* Pages */
+@import "./pages/TheHome";
+@import "./pages/CustomePage";
+@import "./pages/contact";
+@import "./pages/auth";
+@import "./pages/products";
+@import "./pages/cart";
+@import "./pages/categories";
+@import "./pages/profile";
+@import "./pages/singleOrder";
+@import "./pages/singleStore";
+@import "./pages/rateOrder";
+@import "./pages/addresses";
+@import "./pages/addProduct";
+
+/* responsive */
+@import "./responsive/main";
+
+
+/*RTL*/
+@import "./shared/rtl";

@@ -1,0 +1,587 @@
+.profile {
+  .profile-wrapper {
+    padding: 50px 0;
+    .change-pass-content {
+      .form-group {
+        padding: 5px;
+        position: relative;
+
+        .show-pass-btn {
+          position: absolute;
+          top: 13px;
+          right: 18px;
+          border: none;
+          background-color: transparent;
+        }
+        .contact-btn {
+          @include cBtn(65px, 100%, 50px);
+        }
+      }
+    }
+
+    .notitication-content {
+      .notitication {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 10px #C8C8C840;
+        padding: 20px 15px;
+        margin-bottom: 25px;
+        &__title {
+          color: $primary-color;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: capitalize;
+        }
+        &__desc {
+          color: #333333;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.6rem;
+          padding: 15px 0;
+        }
+        &__time {
+          color: #A0AEC0;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: right;
+        }
+      }
+    }
+
+    .orders-content {
+      .orders {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 10px #C8C8C840;
+        padding: 20px 15px;
+        margin-bottom: 25px;
+        &__title {
+          color: #333333;
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+        &__time {
+          color: #A0AEC0;
+          font-size: 14px;
+          text-transform: capitalize;
+          margin-top: 5px;
+        }
+        &__status{
+          color: $primary-color;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: right;
+        }
+      }
+    }
+
+    .chat-content {
+      .chatbox {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 10px #C8C8C840;
+        padding: 20px 15px;
+        margin-bottom: 25px;
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .title {
+            color: #333333;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+        &__footer {
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns: auto auto;
+          justify-content: space-between;
+          .desc {
+            color: #A0AEC0;
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            width: 80%;
+          }
+          .time {
+            color: $primary-color;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .manage-product-content {
+      .add-product-btn {
+        @include cBtn(65px, 352px, 50px);
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        float: right;
+        margin-top: 50px;
+      }
+      .card {
+        .card-body {
+          padding: 0.5rem 0 0.5rem 0.5rem !important;
+        }
+        .edit-card-btn {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          background-color: #fff;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          border: none;
+        }
+      }
+    }
+
+    .statistics-content {
+      .statistics-filter {
+        width: 100%;
+        margin-bottom: 20px;
+        .title {
+          color: #333333;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        .vd-wrapper {
+          border: 1px solid #EDF0F7;
+          border-radius: 65px;
+          padding: 5px 10px;
+        }
+        .filter-btn  {
+          @include cBtn(65px, 100%, 50px);
+        }
+      }
+      .statistics {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        .box {
+          margin: 0 0 15px 0;
+          width: 345px;
+          background-color: #FFFFFF;
+          box-shadow: 0px 0px 10px #C8C8C840;
+          padding: 35px 15px;
+          position: relative;
+          &__title {
+            color: #A0AEC0;
+            font-size: 14px;
+          }
+          &__count {
+            color: #333333;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 10px;
+          }
+          &::after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border: 1px solid;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+          }
+          &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 55px;
+            right: 35px;
+          }
+        }
+        .box:nth-child(1) {
+          &::after {
+            border-color: #F6A140;
+          }
+          &::before {
+            background-color: #F6A140;
+          }
+        }
+        .box:nth-child(2) {
+          &::after {
+            border-color: #3E64FF;
+          }
+          &::before {
+            background-color: #3E64FF;
+          }
+        }
+        .box:nth-child(3) {
+          &::after {
+            border-color: #FE4A5E;
+          }
+          &::before {
+            background-color: #FE4A5E;
+          }
+        }
+        .box:nth-child(4) {
+          &::after {
+            border-color: #40C4FF;
+          }
+          &::before {
+            background-color: #40C4FF;
+          }
+        }
+      }
+    }
+
+    .delivery-content {
+      text-align: center;
+      .title {
+        text-align: left;
+        font-size: 20px;
+        color: #333333;
+        font-weight: 600;
+      }
+      .delivery-box {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #C8C8C840;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+        .box-title {
+          color: $primary-color;
+          font-weight: 600;
+          padding: 0 0 15px 0;
+          border-bottom: 1px solid #EDF0F7;
+          margin-bottom: 20px;
+        }
+      }
+      form {
+        .form-group {
+          position: relative;
+        }
+        input[type="radio"]{
+          display: none;
+        }
+        input[type="radio"] + label{
+          position: relative;
+          display: inline-block;
+          padding-left: 1.5em;
+          margin-right: 2em;
+          cursor: pointer;
+          line-height: 1em;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          color: #333333;
+          font-weight: 600;
+        }
+        input[type="radio"] + label:before,
+        input[type="radio"] + label:after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          font-family: Times;
+          border-radius: 50%;
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+        }
+        input[type="radio"] + label:before {
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          border: 1px solid #333333;
+        }
+        input[type="radio"] + label:hover:before {
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #800000;
+        }
+        input[type="radio"]:checked + label:before {
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #800000;
+          border: 1px solid #800000;
+        }
+        input[type="radio"]:checked + label {
+          color: #800000;
+        }
+      }
+      .delivery-btn {
+        @include cBtn(65px, 80%, 50px);
+        margin: 40px 0 0 0;
+      }
+    }
+
+    .profile-info-content {
+      .form-group {
+        .vs__dropdown-toggle {
+          border: 1px solid #EDF0F7;
+          padding: 10px 15px;
+          cursor: pointer;
+        }
+      }
+      .info-btn {
+        @include cBtn(65px, 352px, 50px);
+        float: right;
+      }
+    }
+
+    .subscription-content {
+      padding: 15px 0;
+      .subscription-header {
+        width: 450px;
+        height: 44px;
+        background-color: #F6F6F7;
+        border-radius: 30px;
+        display: flex;
+        margin: 0 auto;
+        .subscription-btn {
+          border: none;
+          width: 50%;
+          border-radius: 30px;
+          display: block;
+          color: $primary-color;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-weight: 600;
+          background-color: transparent;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+        .subscription-btn.active {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+      .subscriptions {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        .subscription-box {
+          transform: scale(0.9);
+          background-color: #FFFFFF;
+          box-shadow: 0px 10px 30px #6060601A;
+          border-radius: 10px;
+          padding: 15px 10px;
+          text-align: center;
+          .box-header {
+            .title {
+              color: #333333;
+              font-size: 13px;
+            }
+            .price {
+              font-size: 21px;
+              color: $primary-color;
+              font-weight: bold;
+            }
+          }
+          .list-style {
+            padding: 15px 0;
+            .list {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              padding: 10px 0;
+              .list-title {
+                font-size: 14px;
+                color: #72808E;
+              }
+              .list-type {
+                font-weight: 600;
+                font-size: 14px;
+              }
+            }
+          }
+          .subscription-box-btn {
+            background-color: #fff;
+            border-radius: 30px;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            text-transform: uppercase;
+            width: 120px;
+            height: 32px;
+            transition: 0.3s ease-in-out;
+            font-size: 10px;
+            font-weight: bold;
+            &:hover {
+              color: #fff;
+              background-color: $primary-color;
+            }
+          }
+        }
+        .active-subscription-box {
+          transform: scale(1.1);
+          background-color: $primary-color;
+          .box-header {
+            .title {
+              color: #fff;
+            }
+            .price {
+              color: #fff;
+            }
+          }
+          .list-style {
+            .list {
+              .list-title {
+                color: #fff;
+              }
+              .list-type {
+                color: #fff;
+              }
+            }
+          }
+          .subscription-box-btn {
+            background-color: $primary-color;
+            border: 1px solid #fff;
+            color: #fff;
+            &:hover {
+              background-color:#fff;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscription-supplier {
+    .content {
+      padding: 70px 0;
+    }
+    .subscription-header {
+      width: 450px;
+      height: 44px;
+      background-color: #F6F6F7;
+      border-radius: 30px;
+      display: flex;
+      margin: 0 auto;
+      .subscription-btn {
+        border: none;
+        width: 50%;
+        border-radius: 30px;
+        display: block;
+        color: $primary-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: transparent;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+      .subscription-btn.active {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+    .subscriptions {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      .subscription-box {
+        height: 677px;
+        transform: scale(0.9);
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 30px #6060601A;
+        border-radius: 10px;
+        padding: 50px 15px;
+        text-align: center;
+        .box-header {
+          margin-bottom: 50px;
+          .title {
+            color: #333333;
+            font-size: 20px;
+          }
+          .price {
+            font-size: 48px;
+            color: $primary-color;
+            font-weight: bold;
+          }
+        }
+        .list-style {
+          padding: 15px 0;
+          .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            .list-title {
+              font-size: 14px;
+              color: #72808E;
+            }
+            .list-type {
+              font-weight: 600;
+              font-size: 14px;
+            }
+          }
+        }
+        .subscription-box-btn {
+          margin-top: 30px;
+          background-color: #fff;
+          border-radius: 30px;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          text-transform: uppercase;
+          width: 177px;
+          height: 49px;
+          transition: 0.3s ease-in-out;
+          font-size: 15px;
+          font-weight: bold;
+          &:hover {
+            color: #fff;
+            background-color: $primary-color;
+          }
+        }
+      }
+      .active-subscription-box {
+        transform: scale(1.1);
+        background-color: $primary-color;
+        .box-header {
+          .title {
+            color: #fff;
+          }
+          .price {
+            color: #fff;
+          }
+        }
+        .list-style {
+          .list {
+            .list-title {
+              color: #fff;
+            }
+            .list-type {
+              color: #fff;
+            }
+          }
+        }
+        .subscription-box-btn {
+          background-color: $primary-color;
+          border: 1px solid #fff;
+          color: #fff;
+          &:hover {
+            background-color:#fff;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+}

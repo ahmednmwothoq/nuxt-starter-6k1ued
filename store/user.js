@@ -3,7 +3,7 @@ export const state = () => ({
   supplier: {},
   role: null,
   token: null,
-  isLoggedIn: false,
+  isLoggedIn: false
 });
 
 export const mutations = {
@@ -21,46 +21,46 @@ export const mutations = {
   },
   switchUserStuts(state, isLoggedIn) {
     state.isLoggedIn = isLoggedIn;
-  },
+  }
 };
 
 export const actions = {
   addUser({ commit }, event) {
-    commit('storeUser', event);
-    this.$auth.$storage.setUniversal('userData', event);
+    commit('storeUser', event)
+    this.$auth.$storage.setUniversal("userData", event);
   },
   addSupplier({ commit }, event) {
-    commit('storeSupplier', event);
-    this.$auth.$storage.setUniversal('SupplierData', event);
+    commit('storeSupplier', event)
+    this.$auth.$storage.setUniversal("SupplierData", event);
   },
   addRole({ commit }, event) {
-    commit('storeRole', event);
-    this.$auth.$storage.setUniversal('RoleData', event);
+    commit('storeRole', event)
+    this.$auth.$storage.setUniversal("RoleData", event);
   },
   addToken({ commit }, event) {
-    commit('storeToken', event);
-    this.$auth.$storage.setUniversal('token', event);
+    commit('storeToken', event)
+    this.$auth.$storage.setUniversal("token", event);
   },
   switchStatus({ commit }, event) {
-    commit('switchUserStuts', event);
-    this.$auth.$storage.setUniversal('logged_In', event);
+    commit('switchUserStuts', event)
+    this.$auth.$storage.setUniversal("logged_In", event);
   },
-};
+}
 
 export const getters = {
-  getRole: (state) => {
-    return state.role;
+  getRole: state => {
+    return state.role
   },
-  getUser: (state) => {
-    return state.user;
+  getUser: state => {
+    return state.user
   },
-  getSupplier: (state) => {
-    return state.supplier;
+  getSupplier: state => {
+    return state.supplier
   },
-  getToken: (state) => {
-    return state.token;
+  getToken: state => {
+    return state.token
   },
-  getSwitchStatus: (state) => {
-    return state.isLoggedIn;
-  },
-};
+  getSwitchStatus: state => {
+    return state.isLoggedIn
+  }
+}
